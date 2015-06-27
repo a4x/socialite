@@ -27,7 +27,7 @@ abstract class AbstractProvider implements ProviderContract
      * @var string
      */
     protected $clientSecret;
-    
+
     /**
      * The redirect URL.
      *
@@ -270,6 +270,18 @@ abstract class AbstractProvider implements ProviderContract
         $this->scopes = $scopes;
 
         return $this;
+    }
+
+    /**
+     * Set the fields of the requested access.
+     *
+     * @param  array  $fields
+     * @return $this
+     */
+    public function fields(array $fields)
+    {
+      $this->fields = $fields;
+      return $this;
     }
 
     /**
