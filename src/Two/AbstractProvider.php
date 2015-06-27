@@ -33,7 +33,7 @@ abstract class AbstractProvider implements ProviderContract
      *
      * @var string
      */
-    protected $redirectUrl;
+    public $redirectUrl;
 
     /**
      * The scopes being requested.
