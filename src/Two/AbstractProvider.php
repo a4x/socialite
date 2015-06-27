@@ -285,6 +285,18 @@ abstract class AbstractProvider implements ProviderContract
     }
 
     /**
+     * Set the redirect url.
+     *
+     * @param  string  $url
+     * @return $this
+     */
+    public function setRedirectUrl($url)
+    {
+      $this->redirectUrl = $url;
+      return $this;
+    }
+
+    /**
      * Get a fresh instance of the Guzzle HTTP client.
      *
      * @return \GuzzleHttp\Client
